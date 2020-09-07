@@ -23,7 +23,7 @@ public class IntegrationController {
         this.teamService = teamService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/students")
     public List<Student> getStudentList() {
         return studentService.getStudentList();
     }
