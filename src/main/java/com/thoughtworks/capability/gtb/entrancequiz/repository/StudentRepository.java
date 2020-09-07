@@ -54,4 +54,8 @@ public class StudentRepository {
     public static List<Student> findAll() {
         return studentList;
     }
+
+    public static void addStudent(String studentName) {
+        studentList.add(new Student(studentList.size() + 1, studentName));
+    }
 }
